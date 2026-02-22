@@ -1,12 +1,15 @@
 {
   "name": "ai-gateway",
   "version": "1.0.0",
-  "description": "我的第一个AI网关",
+  "description": "我的AI网关",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
