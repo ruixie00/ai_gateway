@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // 允许接收JSON格式的数据
 app.use(express.json());
@@ -25,4 +25,5 @@ app.post('/api/chat', (req, res) => {
 // 启动网关
 app.listen(port, () => {
   console.log(`🚀 网关启动成功！访问地址：http://localhost:${port}`);
+
 });
